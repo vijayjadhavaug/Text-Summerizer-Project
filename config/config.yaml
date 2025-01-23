@@ -1,0 +1,14 @@
+# define the artifacts folder
+# these configrations can be used across the files in the project.
+artifacts_root : artifacts # this will create the artifacts folder
+
+# create data ingestion related configuration like path, url. so that we can read it from here.
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion # carete data_ingestion folder inside artifacts folder
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+
+
