@@ -1,4 +1,4 @@
-# Text-Summerizer-Project
+# Text-Summarizer-Project
 NLP Application using Hugging face transformer
 
 packages

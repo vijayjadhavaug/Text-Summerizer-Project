@@ -3,7 +3,6 @@
 artifacts_root : artifacts # this will create the artifacts folder
 
 # create data ingestion related configuration like path, url. so that we can read it from here.
-
 data_ingestion:
   root_dir: artifacts/data_ingestion # carete data_ingestion folder inside artifacts folder
   source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
@@ -11,4 +10,8 @@ data_ingestion:
   unzip_dir: artifacts/data_ingestion
 
 
-
+# This will create a data_validation folder inside artifacts and verify if train, test and validation folders and  files in it.
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]
